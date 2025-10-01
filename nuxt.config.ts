@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      // apiBase: process.env.API_BASE || "http://localhost:80"
+       apiBase: process.env.PUBLIC_API_BASE || 'http://localhost:8000/api'
     },
   },
   compatibilityDate: "2025-09-17",
@@ -39,7 +39,7 @@ export default defineNuxtConfig({
       link: [
         { rel: "stylesheet", href: "/assets/css/all.min.css" },
         { rel: "stylesheet", href: "/assets/css/style.css" },
-        { rel: "manifest", href: "manifest.json" },
+   
         { rel: "shortcut icon", href: "", type:"image/x-icon" }
       ],
       script: [
